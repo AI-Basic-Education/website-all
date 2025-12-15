@@ -18,23 +18,19 @@ export default async function PhenomenaPage(
   const modifiedTime = new Date(page.data.lastModified)
 
   const baseDir = params.slug[0]
-  const works = await import(
-    `@/content/phenomena/${baseDir}/${page.data.relatedWorks}`
-  )
+  // const works = await import(
+  //   `@/content/phenomena/${baseDir}/${page.data.relatedWorks}`
+  // )
 
   return (
     <>
       <h1 className="pt-12">{page.data.title}</h1>
       <p>{page.data.description}</p>
-      <p className="opacity-75">Contributors: {page.data.author}</p>
       <p className="mb-4 text-sm opacity-75">
         Last modified: {modifiedTime.toDateString()} · {readingTime.text}
       </p>
       <hr />
       <MDX components={getMDXComponents()} />
-      {works && (
-        <RelatedWorksAccordion baseDir={baseDir} works={works.default} />
-      )}
     </>
   )
 }

@@ -15,10 +15,11 @@ export default function PhenomenaCards() {
     <section className="prose-ul:-ml-6 prose-ul:list-none">
       <ul className="grid auto-rows-fr grid-cols-1 gap-6 md:grid-cols-2 md:items-stretch">
         {phenomena.map((page) => {
-          return (
-            <li key={page.url}>
-              <Link href={page.url}>
-                <Card className="flex h-full flex-col">
+          const href = (page.data as any).externalUrl ?? page.url
+          const isExternal = Boolean((page.data as any).externalUrl)
+
+          const content = (
+            <Card className="flex h-full flex-col">
                   <CardHeader>
                     <CardTitle className="text-xl font-bold">
                       {page.data.title}
@@ -36,7 +37,17 @@ export default function PhenomenaCards() {
                     </p>
                   </CardFooter>
                 </Card>
-              </Link>
+          )
+
+          return (
+            <li key={page.url}>
+              {isExternal ? (
+                <a href={href} target="_blank" rel="noreferrer">
+                  {content}
+                </a>
+              ) : (
+                <Link href={href}>{content}</Link>
+              )}
             </li>
           )
         })}

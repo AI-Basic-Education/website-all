@@ -13,10 +13,10 @@ export const phenomena = defineDocs({
   dir: "content/phenomena",
   docs: {
     schema: frontmatterSchema.extend({
-      author: z.string(),
-      pubDate: z.string().optional(),
       tags: z.array(z.string()).optional(),
       relatedWorks: z.string().optional(),
+      // 可选：如果提供 externalUrl，则首页卡片会跳转到这个外部链接
+      externalUrl: z.string().url().optional(),
     }),
     files: ["**/*", "!**/data/*"],
     postprocess: {

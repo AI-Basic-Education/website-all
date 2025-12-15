@@ -40,7 +40,6 @@ export default function HeaderLinks() {
     <>
       <HeaderLink href="/about">About</HeaderLink>
       <HeaderLink href="/team">Team</HeaderLink>
-      <HeaderLink href="/submission">Submission</HeaderLink>
       <HeaderLink href="mailto:xuzhiqin@sjtu.edu.cn">Contact</HeaderLink>
       <HeaderLink
         href="https://github.com/dlphenomena"
