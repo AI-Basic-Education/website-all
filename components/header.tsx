@@ -9,7 +9,7 @@ const headerLinks = [
   { href: "/about", text: "About" },
   { href: "/team", text: "Team" },
   { href: "mailto:xuzhiqin@sjtu.edu.cn", text: "Contact" },
-  { href: "https://github.com/dlphenomena", text: "Repos" },
+  { href: "https://github.com/AI-Basic-Education", text: "Repos" },
 ]
 
 export default function Header() {

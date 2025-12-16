@@ -42,7 +42,7 @@ export default function HeaderLinks() {
       <HeaderLink href="/team">Team</HeaderLink>
       <HeaderLink href="mailto:xuzhiqin@sjtu.edu.cn">Contact</HeaderLink>
       <HeaderLink
-        href="https://github.com/dlphenomena"
+        href="https://github.com/AI-Basic-Education"
         className="flex items-center gap-2"
       >
         <IoLogoGithub />

@@ -16,8 +16,8 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Deep Learning Phenomena",
-  description: "A blog about interesting phenomena in deep learning",
+  title: "Institute of machine learning",
+  description: "",
 }
 
 export default function RootLayout({
