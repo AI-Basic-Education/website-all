@@ -16,7 +16,7 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Institute of machine learning",
+  title: "Institute of Machine Learning",
   description: "",
 }
 

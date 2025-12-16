@@ -38,16 +38,16 @@ function HeaderLink({
 export default function HeaderLinks() {
   return (
     <>
-      <HeaderLink href="/about">About</HeaderLink>
-      <HeaderLink href="/team">Team</HeaderLink>
+      {/* <HeaderLink href="/about">About</HeaderLink>
+      <HeaderLink href="/team">Team</HeaderLink> */}
       <HeaderLink href="mailto:xuzhiqin@sjtu.edu.cn">Contact</HeaderLink>
-      <HeaderLink
+      {/* <HeaderLink
         href="https://github.com/AI-Basic-Education"
         className="flex items-center gap-2"
       >
         <IoLogoGithub />
-        Repos
-      </HeaderLink>
+        Repos */}
+      {/* </HeaderLink> */}
     </>
   )
 }
